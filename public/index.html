@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASixEJeTZgVeuRIVtyubOKQsw-ccQTScI&libraries=places"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Express Sky</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="icon-container">
+          <canvas class="icon" width="100" height="100"></canvas>
+        </div>
+      </div>
+      <div class="content">
+        <div class="general-information">
+          <div class="status" data-location>Enter a location</div>
+          <div class="location"></div>
+        </div>
+        <div class="detail-section">
+          <div class="detail">
+            <div class="title">Wind</div>
+            <div class="value" data-wind></div>
+          </div>
+          <div class="detail bordered">
+            <div class="title">Temperature</div>
+            <div class="value">
+              <div class="temp-value" data-temp></div>
+              <span>F</span>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="title">Currently</div>
+            <div class="value" data-description></div>
+          </div>
+        </div>
+        <div class="city-search-container">
+          <input
+            type="text"
+            class="city-search"
+            data-city-search
+            placeholder="Enter location"
+          />
+        </div>
+      </div>
+      <a href="http://api.openweathermap.org" target="blank" class="logo"
+        >Powered By Openweathermap</a
+      >
+    </div>
+  </body>
+</html>

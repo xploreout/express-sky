@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #302f2f;
+}
+
+body {
+  background: linear-gradient(to right, rgb(187, 224, 241), rgb(7, 202, 236));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 90%;
+  width: 900px;
+  background-color: white;
+  box-shadow: 0 5px 10px black;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  background-color: rgb(13, 57, 153);
+
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.icon-container {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  width: 140px;
+  height: 140px;
+  top: 70px;
+  border-radius: 50%;
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.status {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.location {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.detail-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.detail .title {
+  font-size: 2rem;
+  flex-grow: 1;
+  font-weight: bold;
+  color: #777;
+}
+
+.detail .value {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.detail.bordered .value {
+  display: flex;
+  justify-content: center;
+}
+
+.detail.bordered span {
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+.detail.bordered {
+  border-right: 1px solid #777;
+  border-left: 1px solid #777;
+  cursor: pointer;
+}
+
+.city-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.city-search {
+  font-size: 2rem;
+  margin-top: 20px;
+  outline: none;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+}
+.pac-icon {
+  display: none;
+}
+
+.pac-item-query {
+  font-size: 1.5rem;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.logo {
+  display: flex;
+  color: #333;
+  font-size: 10px;
+  justify-content: center;
+}
