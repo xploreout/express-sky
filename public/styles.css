@@ -23,7 +23,7 @@ body {
 }
 
 .content {
-  padding: 40px;
+  padding: 10px;
   margin-top: 50px;
 }
 
@@ -67,7 +67,7 @@ body {
 .detail-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .detail {
@@ -88,8 +88,10 @@ body {
 
 .detail .value {
   font-size: 2rem;
-  margin-top: 20px;
+  margin-top: 5px;
+  display: flex;
 }
+
 
 .detail.bordered .value {
   display: flex;

@@ -30,18 +30,15 @@
         </div>
         <div class="detail-section">
           <div class="detail">
-            <div class="title">Wind</div>
             <div class="value" data-wind></div>
           </div>
           <div class="detail bordered">
-            <div class="title">Temperature</div>
             <div class="value">
               <div class="temp-value" data-temp></div>
               <span>F</span>
             </div>
           </div>
           <div class="detail">
-            <div class="title">Currently</div>
             <div class="value" data-description></div>
           </div>
         </div>
@@ -51,12 +48,15 @@
             class="city-search"
             data-city-search
             placeholder="Enter location"
+            onfocus="this.value=''"
           />
         </div>
       </div>
+
       <a href="http://api.openweathermap.org" target="blank" class="logo"
         >Powered By Openweathermap</a
       >
+      
     </div>
   </body>
 </html>

@@ -53,6 +53,7 @@ function fetchWeather(longitude, latitude) {
     .then((res) => res.json())
     .then((data) => {
       setWeatherData(data);
+      console.log(data);
       fetchedTempInC = (((data.main.temp - 32) * 5) / 9).toFixed();
       fetchedTempInF = data.main.temp.toFixed();
     });
@@ -72,7 +73,7 @@ function setWeatherData(data) {
   const { description, main } = data.weather[0];
   dataLocation.textContent = data.name;
   dataTemp.textContent = data.main.temp.toFixed();
-  dataWind.textContent = data.wind.speed;
+  dataWind.textContent = data.wind.speed + ' mph';
   dataDescription.textContent = description;
   tempUnit.textContent = 'F';
 
