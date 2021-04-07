@@ -3,7 +3,7 @@ const searchBox = new google.maps.places.SearchBox(searchElement);
 const dataTemp = document.querySelector('[data-temp]');
 const dataWind = document.querySelector('[data-wind]');
 const dataDescription = document.querySelector('[data-description]');
-const dataLocation = document.querySelector('[data-location]');
+const dataLocation = document.querySelector('[data-location]') ;
 
 const tempUnit = document.querySelector('.detail.bordered span');
 const iconElement = document.querySelector('.icon');
